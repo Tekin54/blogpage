@@ -5,32 +5,36 @@
       <q-separator color="white" />
     </div>
     <div class="row q-gutter-lg">
-      <q-card
+      <a
         v-for="project of projects"
         :key="project.id"
-        class="q-pa-md card"
-        style="
-          width: 300px;
-          height: 300px;
-          border-radius: 20px;
-          background-color: #2b2b2b;
-          border: 1px solid #474747;
-          color: white;
-        "
+        href="https://vudiary.onrender.com"
+        style="text-decoration: none"
       >
-        <div class="column q-mb-md">
-          <div
-            class="flex items-center justify-center"
-            style="background-color: white; width: 60px; height: 60px; border-radius: 12px"
-          >
-            <q-img :src="project.image" :style="`width: ${project.width}px;`" contain />
+        <q-card
+          class="q-pa-md card"
+          style="
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            border: 1px solid #474747;
+            color: white;
+          "
+        >
+          <div class="column q-mb-md">
+            <div
+              class="flex items-center justify-center"
+              style="background-color: white; width: 60px; height: 60px; border-radius: 12px"
+            >
+              <q-img :src="project.image" :style="`width: ${project.width}px;`" contain />
+            </div>
+
+            <div class="text-h5 text-bold q-mt-sm">{{ project.name }}</div>
           </div>
 
-          <div class="text-h5 text-bold q-mt-sm">{{ project.name }}</div>
-        </div>
-
-        <q-card-section class="q-pt-none q-pl-none" v-html="project.description" />
-      </q-card>
+          <q-card-section class="q-pt-none q-pl-none" v-html="project.description" />
+        </q-card>
+      </a>
     </div>
 
     <div class="q-mb-md">
@@ -51,7 +55,6 @@
             width: 300px;
             height: 300px;
             border-radius: 20px;
-            background-color: #2b2b2b;
             border: 1px solid #474747;
             color: white;
           "
@@ -87,7 +90,6 @@
           width: 300px;
           height: 300px;
           border-radius: 20px;
-          background-color: #2b2b2b;
           border: 1px solid #474747;
           color: white;
         "
@@ -115,9 +117,6 @@ import { design_projects, archived_projects, projects } from '@/data/projects';
 </script>
 
 <style>
-.projects_text_color {
-  color: white;
-}
 .card {
   width: 300px;
   height: 200px;
@@ -131,6 +130,18 @@ import { design_projects, archived_projects, projects } from '@/data/projects';
 .card:hover {
   background-color: #383838;
   transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.dropdown-card {
+  border-radius: 20px;
+  background-color: #2b2b2b;
+  border: 1px solid #474747;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.dropdown-card:hover {
+  background-color: #383838;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 </style>

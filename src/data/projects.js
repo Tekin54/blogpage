@@ -74,6 +74,7 @@ export const projects = [
     description:
       'Vuediary ist ein einfaches Online-Tagebuch, in dem man Einträge mit GPS, Stimmungen und Bearbeitungsverlauf erstellen, bearbeiten und filtern kann.',
     width: 40,
+    link: 'https://vudiary.onrender.com/',
   },
   {
     name: 'TEKTEK - Shopping Seite',

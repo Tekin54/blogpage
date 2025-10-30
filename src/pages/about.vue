@@ -16,91 +16,109 @@ import { Icon } from '@iconify/vue';
     <!-- Kontaktkarten -->
     <div class="row justify-center q-gutter-md">
       <!-- E-Mail Karte 1 -->
-      <div
-        class="bg-white text-dark column items-center q-pa-md shadow-2 hoverable"
-        style="border-radius: 16px; max-width: 320px; width: 100%; transition: all 0.3s ease-in-out"
-      >
-        <!-- Icon-Box -->
-        <div
-          class="bg-grey-3 flex flex-center"
-          style="border-radius: 50%; width: 64px; height: 64px"
-        >
-          <Icon icon="logos:google-gmail" width="32" />
-        </div>
-
-        <!-- E-Mail -->
-        <div class="text-center q-mt-md">
-          <div class="text-subtitle1 text-weight-bold">E-Mail</div>
-          <a
-            href="mailto:gultekinozturk72@gmail.com"
-            class="text-primary"
-            style="word-break: break-word"
+      <a
+        href="mailto:gultekinozturk72@gmail.com"
+        class="text-primary"
+        style="word-break: break-word; text-decoration: none"
+        ><div class="column items-center q-pa-md contact-card" style="">
+          <!-- Icon-Box -->
+          <div
+            class="bg-grey-3 flex flex-center"
+            style="border-radius: 12px; width: 64px; height: 64px"
           >
-            gultekinozturk72@gmail.com
-          </a>
-        </div>
+            <Icon icon="logos:google-gmail" width="32" />
+          </div>
 
-        <p class="text-caption text-grey-7 q-mt-sm text-center">
-          Klicken Sie auf die Adresse, um mir direkt eine E-Mail zu schreiben.
-        </p>
-      </div>
+          <!-- E-Mail -->
+          <div class="text-center q-mt-md">
+            <div class="text-subtitle1 text-weight-bold">E-Mail</div>
+
+            gultekinozturk72@gmail.com
+          </div>
+
+          <p class="text-caption text-grey-7 q-mt-sm text-center">
+            Klicken Sie auf die Adresse, um mir direkt eine E-Mail zu schreiben.
+          </p>
+        </div></a
+      >
 
       <!-- Github -->
-      <div
-        class="bg-white text-dark column items-center q-pa-md shadow-2 hoverable"
-        style="border-radius: 16px; max-width: 320px; width: 100%; transition: all 0.3s ease-in-out"
+      <a
+        href="https://github.com/Tekin54"
+        class="text-white"
+        style="word-break: break-word; text-decoration: none"
       >
-        <!-- Icon-Box -->
-        <div
-          class="bg-grey-3 flex flex-center"
-          style="border-radius: 50%; width: 64px; height: 64px"
-        >
-          <Icon icon="logos:github-icon" width="32" />
-        </div>
+        <div class="column items-center q-pa-md shadow-2 hoverable contact-card">
+          <!-- Icon-Box -->
+          <div
+            class="bg-grey-3 flex flex-center"
+            style="border-radius: 12px; width: 64px; height: 64px"
+          >
+            <Icon icon="logos:github-icon" width="32" />
+          </div>
 
-        <!-- E-Mail -->
-        <div class="text-center q-mt-md">
-          <div class="text-subtitle1 text-weight-bold">Github</div>
-          <a href="https://github.com/Tekin54" class="text-primary" style="word-break: break-word">
-            Tekin54
-          </a>
-        </div>
+          <!-- E-Mail -->
+          <div class="text-center q-mt-md">
+            <div class="text-subtitle1 text-weight-bold">Github</div>
+            <a
+              href="https://github.com/Tekin54"
+              class="text-white"
+              style="word-break: break-word; text-decoration: none"
+            >
+              Tekin54
+            </a>
+          </div>
 
-        <p class="text-caption text-grey-7 q-mt-sm text-center">
-          Klicken Sie auf die Adresse, um mir direkt per Github zu schreiben.
-        </p>
-      </div>
+          <p class="text-caption text-grey-7 q-mt-sm text-center">
+            Klicken Sie auf die Adresse, um mir direkt per Github zu schreiben.
+          </p>
+        </div></a
+      >
 
       <!-- Instagram Karte -->
-      <div
-        class="bg-white text-dark column items-center q-pa-md shadow-2 hoverable"
-        style="border-radius: 16px; max-width: 320px; width: 100%; transition: all 0.3s ease-in-out"
+      <a
+        href="https://instagram.com/teking54"
+        target="_blank"
+        rel="noopener"
+        style="word-break: break-word; color: inherit; text-decoration: none; font-weight: 500"
       >
-        <!-- Icon-Box -->
-        <div
-          class="bg-grey-3 flex flex-center"
-          style="border-radius: 50%; width: 64px; height: 64px"
-        >
-          <Icon icon="logos:instagram-icon" width="32" />
-        </div>
-
-        <!-- Instagram -->
-        <div class="text-center q-mt-md">
-          <div class="text-subtitle1 text-weight-bold">Instagram</div>
-          <a
-            href="https://instagram.com/teking54"
-            target="_blank"
-            rel="noopener"
-            style="word-break: break-word; color: inherit; text-decoration: none; font-weight: 500"
+        <div class="column items-center q-pa-md contact-card">
+          <!-- Icon-Box -->
+          <div
+            class="bg-grey-3 flex flex-center"
+            style="border-radius: 12px; width: 64px; height: 64px"
           >
-            @teking54
-          </a>
-        </div>
+            <Icon icon="logos:instagram-icon" width="32" />
+          </div>
 
-        <p class="text-caption text-grey-7 q-mt-sm text-center">
-          Klicken Sie auf die Adresse, um mit mir per Instagram zu schreiben.
-        </p>
-      </div>
+          <!-- Instagram -->
+          <div class="text-center q-mt-md">
+            <div class="text-subtitle1 text-weight-bold">Instagram</div>
+
+            @Teking54
+          </div>
+
+          <p class="text-caption text-grey-7 q-mt-sm text-center">
+            Klicken Sie auf die Adresse, um mit mir per Instagram zu schreiben.
+          </p>
+        </div></a
+      >
     </div>
   </div>
 </template>
+<style>
+.contact-card {
+  width: 300px;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+  border: 1px solid #474747;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.contact-card:hover {
+  background-color: #383838;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+</style>

@@ -73,7 +73,7 @@ body {
 }
 
 .rounded {
-  border-radius: 100px;
+  border-radius: 15px;
 }
 
 .nav-link {
