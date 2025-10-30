@@ -5,8 +5,8 @@ import { ref } from 'vue';
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header
-      style="opacity: 0.9"
-      class="bg-grey-10 text-white rounded padding_navbar margin_index"
+      style="background: rgba(43, 43, 43, 0.8); backdrop-filter: blur(10px)"
+      class="text-white rounded padding_navbar margin_index"
       height-hint="98"
     >
       <q-toolbar class="justify-center q-gutter-sm q-pa-sm">
