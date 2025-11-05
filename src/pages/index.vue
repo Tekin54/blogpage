@@ -227,7 +227,7 @@ body {
   position: relative;
   height: 600px;
   width: 100%;
-  background: url('./img/Copilot_20251105_233600_blur.png') center/cover no-repeat;
+  background: url('/Copilot_20251105_233600_blur.png') center/cover no-repeat;
   background-attachment: fixed;
   display: flex;
   align-items: center;
