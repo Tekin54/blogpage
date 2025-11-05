@@ -206,6 +206,7 @@ body {
   transform: translateY(-4px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+
 .dropdown-card {
   border-radius: 20px;
   background-color: #2b2b2b;
