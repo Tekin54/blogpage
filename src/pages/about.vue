@@ -121,4 +121,14 @@ import { Icon } from '@iconify/vue';
   transform: translateY(-4px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+  border: 1px solid #474747;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
 </style>

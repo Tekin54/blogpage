@@ -13,10 +13,7 @@
       >
         <q-card class="q-pa-md card">
           <div class="column q-mb-md">
-            <div
-              class="flex items-center justify-center"
-              style="background-color: white; width: 60px; height: 60px; border-radius: 12px"
-            >
+            <div class="flex items-center justify-center icon-cover">
               <q-img :src="project.image" :style="`width: ${project.width}px;`" contain />
             </div>
 
@@ -41,10 +38,7 @@
       >
         <q-card clickable class="q-pa-md card">
           <div class="column q-mb-md">
-            <div
-              class="flex items-center justify-center"
-              style="background-color: white; width: 60px; height: 60px; border-radius: 12px"
-            >
+            <div class="flex items-center justify-center icon-cover">
               <q-img :src="dproject.image" :style="`width: ${dproject.width}px;`" contain />
             </div>
 
@@ -70,10 +64,7 @@
         style=""
       >
         <div class="column q-mb-md">
-          <div
-            class="flex items-center justify-center"
-            style="background-color: white; width: 60px; height: 60px; border-radius: 12px"
-          >
+          <div class="flex items-center justify-center icon-cover">
             <q-img :src="aproject.image" :style="`width: ${aproject.width}px;`" contain />
           </div>
 
@@ -118,5 +109,12 @@ import { design_projects, archived_projects, projects } from '@/data/projects';
 .dropdown-card:hover {
   background-color: #383838;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.icon-cover {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
 }
 </style>

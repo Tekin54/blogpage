@@ -12,6 +12,7 @@ import { ref } from 'vue';
       <q-toolbar class="justify-center q-gutter-sm q-pa-sm">
         <router-link to="/" class="nav-link"> Home </router-link>
         <router-link to="/projects" class="nav-link"> Projects </router-link>
+        <router-link to="/gallery" class="nav-link"> Gallery </router-link>
         <router-link to="/about" class="nav-link"> About </router-link>
       </q-toolbar>
     </q-header>
