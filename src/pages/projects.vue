@@ -8,7 +8,7 @@
       <a
         v-for="project of projects"
         :key="project.id"
-        href="https://vudiary.onrender.com"
+        :href="project.link"
         style="text-decoration: none"
       >
         <q-card class="q-pa-md card">
