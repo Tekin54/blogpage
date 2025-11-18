@@ -82,6 +82,7 @@ export const projects = [
     description:
       'Online-Shop für Mode & Accessoires. Homepage-Remake aktuell in <span class="text-bold" style="color:red; ">Bearbeitung</span>.',
     width: 50,
+    link: 'https://tektek-shop.netlify.app/',
   },
 ];
 export const archived_projects = [

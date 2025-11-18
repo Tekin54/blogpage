@@ -11,16 +11,7 @@
         href="https://vudiary.onrender.com"
         style="text-decoration: none"
       >
-        <q-card
-          class="q-pa-md card"
-          style="
-            width: 300px;
-            height: 300px;
-            border-radius: 20px;
-            border: 1px solid #474747;
-            color: white;
-          "
-        >
+        <q-card class="q-pa-md card">
           <div class="column q-mb-md">
             <div
               class="flex items-center justify-center"
@@ -48,17 +39,7 @@
         :to="`/${dproject.direct}/${dproject.id}`"
         style="text-decoration: none"
       >
-        <q-card
-          clickable
-          class="q-pa-md card"
-          style="
-            width: 300px;
-            height: 300px;
-            border-radius: 20px;
-            border: 1px solid #474747;
-            color: white;
-          "
-        >
+        <q-card clickable class="q-pa-md card">
           <div class="column q-mb-md">
             <div
               class="flex items-center justify-center"
@@ -86,13 +67,7 @@
         v-for="aproject of archived_projects"
         :key="aproject.id"
         class="q-pa-md card"
-        style="
-          width: 300px;
-          height: 300px;
-          border-radius: 20px;
-          border: 1px solid #474747;
-          color: white;
-        "
+        style=""
       >
         <div class="column q-mb-md">
           <div
@@ -119,7 +94,7 @@ import { design_projects, archived_projects, projects } from '@/data/projects';
 <style>
 .card {
   width: 300px;
-  height: 200px;
+  height: 300px;
   border-radius: 20px;
   background-color: #2b2b2b;
   border: 1px solid #474747;

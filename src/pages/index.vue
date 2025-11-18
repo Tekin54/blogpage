@@ -79,40 +79,54 @@ function onDialogHide(evt) {
 
 <template>
   <div class="column q-mt-xl">
-    <div
-      :class="
-        $q.screen.lt.md
-          ? 'column q-gutter-xl items-center text-center'
-          : 'row q-gutter-xl justify-center q-mt-lg'
-      "
-    >
-      <div>
-        <img
-          src="Bild_Oeztuerk.PNG"
-          style="height: 300px; object-fit: cover; display: block; border-radius: 100px"
-        />
-      </div>
+    <div class="column">
+      <div
+        :class="
+          $q.screen.lt.md
+            ? 'column q-gutter-xl items-center text-center'
+            : 'row q-gutter-xl justify-center q-mt-lg'
+        "
+      >
+        <div>
+          <img
+            src="Bild_Oeztuerk.PNG"
+            style="height: 300px; object-fit: cover; display: block; border-radius: 100px"
+          />
+        </div>
 
-      <div class="col-6 q-pl-lg q-gutter-y-xl">
-        <span :class="$q.screen.lt.md ? 'text-h5 greeting  ' : 'text-h3 greeting '">
-          Hallo, mein Name ist
-          <span
-            style="display: inline-block; transform: rotate(4deg); border-radius: 17px"
-            class="bg-indigo-4"
-            >Gülte</span
-          >
-        </span>
-        <p class="text-h6">
-          „Lorem ipsum“ – ich war Schüler an der HTL Wien West in der
-          <span
-            style="border-radius: 10px; display: inline-block; transform: rotate(-4deg)"
-            class="bg-indigo-4"
-          >
-            IT-Abteilung
+        <div class="col-7 q-pl-lg q-gutter-y-xl">
+          <span :class="$q.screen.lt.md ? 'text-h5 greeting  ' : 'text-h3 greeting '">
+            Hallo, mein Name ist
+            <span
+              style="display: inline-block; transform: rotate(4deg); border-radius: 17px"
+              class="bg-indigo-4"
+              >Gültekin</span
+            >
           </span>
-          und habe dort meine Leidenschaft für Technik entdeckt. Besonders interessiert mich die
-          Arbeit mit moderner Software und innovativen Technologien.
-        </p>
+          <p class="text-h6">
+            Ich war Schüler an der HTL Wien West in der
+            <span
+              style="border-radius: 10px; display: inline-block; transform: rotate(-4deg)"
+              class="bg-indigo-4"
+            >
+              IT-Abteilung
+            </span>
+            und habe dort meine Leidenschaft für Technik entdeckt. Besonders interessiert mich die
+            Arbeit mit moderner Software und innovativen Technologien, da ich es spannend finde,
+            Probleme kreativ zu lösen und digitale Lösungen zu entwickeln.
+          </p>
+        </div>
+      </div>
+      <!-- Lebenslauf Bereich -->
+      <div class="column items-center justify-center">
+        <!-- Animierter Pfeil -->
+        <Icon icon="mdi:arrow-down" width="35" class="animated-arrow q-mb-md" />
+
+        <!-- Lebenslauf Button -->
+        <a href="/Lebenslauf Oeztuerk.pdf" target="_blank" class="resume-btn text-h6 text-white">
+          <Icon icon="mdi:file-account" width="24" class="q-mr-sm" />
+          Lebenslauf anzeigen
+        </a>
       </div>
     </div>
     <div class="column q-mt-xl">
@@ -284,5 +298,38 @@ body {
 .gallery-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2b2b;
+  border: 1px solid #474747;
+  border-radius: 14px;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+}
+
+.resume-btn:hover {
+  background-color: #383838;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.animated-arrow {
+  animation: bounce 1.5s infinite ease-in-out;
+  color: #9ca3af; /* leicht grauer Ton */
+  opacity: 0.9;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
 }
 </style>
