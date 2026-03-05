@@ -148,7 +148,7 @@ onMounted(() => {
           </p>
 
           <div class="row q-gutter-md" :class="$q.screen.lt.md ? 'justify-center' : ''">
-            <a href="/Lebenslauf.pdf" target="_blank" class="resume-btn text-white">
+            <a href="/CV.pdf" target="_blank" class="resume-btn text-white">
               <Icon icon="mdi:file-account" width="22" class="q-mr-sm" />
               Lebenslauf
             </a>
